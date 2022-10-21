@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2170fa5a.css",
-    "main.js": "/static/js/main.bc7a4ce4.js",
-    "static/js/787.cd05940b.chunk.js": "/static/js/787.cd05940b.chunk.js",
-    "static/media/page_not_found.svg": "/static/media/page_not_found.7f706a559148167da77c0bcf1d38d746.svg",
-    "static/media/logo.svg": "/static/media/logo.5f1b40a069bafdef2ecb4efae1fa4c83.svg",
-    "index.html": "/index.html",
-    "main.2170fa5a.css.map": "/static/css/main.2170fa5a.css.map",
-    "main.bc7a4ce4.js.map": "/static/js/main.bc7a4ce4.js.map",
-    "787.cd05940b.chunk.js.map": "/static/js/787.cd05940b.chunk.js.map"
+    "main.css": "/React-Web-Portfolio/static/css/main.2170fa5a.css",
+    "main.js": "/React-Web-Portfolio/static/js/main.a353e375.js",
+    "static/js/787.cd05940b.chunk.js": "/React-Web-Portfolio/static/js/787.cd05940b.chunk.js",
+    "static/media/page_not_found.svg": "/React-Web-Portfolio/static/media/page_not_found.7f706a559148167da77c0bcf1d38d746.svg",
+    "static/media/logo.svg": "/React-Web-Portfolio/static/media/logo.5f1b40a069bafdef2ecb4efae1fa4c83.svg",
+    "index.html": "/React-Web-Portfolio/index.html",
+    "main.2170fa5a.css.map": "/React-Web-Portfolio/static/css/main.2170fa5a.css.map",
+    "main.a353e375.js.map": "/React-Web-Portfolio/static/js/main.a353e375.js.map",
+    "787.cd05940b.chunk.js.map": "/React-Web-Portfolio/static/js/787.cd05940b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2170fa5a.css",
-    "static/js/main.bc7a4ce4.js"
+    "static/js/main.a353e375.js"
   ]
 }
