@@ -1,0 +1,224 @@
+@import "../../App.scss";
+
+.project-card-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: auto;
+  animation: showOn 0.5s;
+
+  @keyframes showOn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .project-card-wrapper {
+    padding: 1rem;
+    position: relative;
+    width: 870px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(245, 245, 245, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    animation: unfoldIn 0.7s;
+
+    @keyframes unfoldIn {
+      0% {
+        transform: scaleY(0.005) scaleX(0);
+      }
+      33% {
+        transform: scaleY(0.005) scaleX(1);
+      }
+      66% {
+        transform: scaleY(0.01) scaleX(1);
+      }
+      100% {
+        transform: scaleY(1) scaleX(1);
+      }
+    }
+
+    @media screen and (max-height: 500px) {
+      height: 390px;
+    }
+
+    @media screen and (max-width: 960px) {
+      width: 750px;
+      height: 390px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 0.5rem;
+      flex-direction: column;
+      justify-content: space-evenly;
+      min-width: 360px;
+      max-width: 390px;
+      width: 100%;
+      min-height: 390px;
+      max-height: 540px;
+      height: 100%;
+    }
+
+    .project-card-details {
+      padding: 0.5rem 1rem;
+      width: 45%;
+      height: 100%;
+      color: rgb(70, 70, 70);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media screen and (max-width: 960px) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+      }
+
+      .project-card-text {
+        margin-bottom: 1.5rem;
+        font-family: $text2;
+        font-size: 1rem;
+
+        @media screen and (max-width: 960px) {
+          font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 1rem;
+        }
+
+        h2 {
+          height: 50px;
+          font-size: 2rem;
+          font-family: $text1;
+          color: $color_2;
+
+          @media screen and (max-width: 960px) {
+            font-size: 1.6rem;
+            height: 40px;
+          }
+        }
+      }
+
+      .project-card-technologies {
+        height: 30px;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: $text3;
+        line-height: 1.5;
+        color: $color_1;
+
+        @media screen and (max-width: 960px) {
+          font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 767px) {
+          height: 25px;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .image-container {
+      width: 55%;
+      display: flex;
+
+      @media screen and (max-width: 960px) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+
+      img {
+        margin: 0 auto;
+        max-width: 90%;
+      }
+    }
+
+    .close-icon {
+      position: absolute;
+      height: auto;
+      right: -16px;
+      top: -16px;
+
+      svg {
+        color: $accent-color;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(110%);
+          color: darken($accent-color, 15%);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      @media screen and (max-height: 500px) {
+        right: 0;
+        top: 0;
+      }
+
+      @media screen and (max-width: 960px) {
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .project-card-links {
+      height: 35px;
+      padding-left: 1rem;
+      font-family: $text3;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+
+        span {
+          padding: 0.2rem 1rem 0.3rem;
+          background: $accent-color;
+          color: whitesmoke;
+          font-size: 0.9rem;
+
+          &:hover {
+            color: $color_1;
+            transition: 0.5s all ease-in-out;
+          }
+        }
+      }
+
+      svg {
+        color: $color_1;
+        font-size: 1.5rem;
+        margin-right: 1.25rem;
+        margin-top: 0.4rem;
+
+        &:hover {
+          transform: scale(110%);
+          color: lighten($color_1, 10%);
+          transition: 0.5s all ease-in-out;
+        }
+      }
+    }
+  }
+}

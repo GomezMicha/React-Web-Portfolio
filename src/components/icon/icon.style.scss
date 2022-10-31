@@ -1,0 +1,21 @@
+@import "../../App.scss";
+
+.icon {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    color: $accent-color;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      transform: scale(110%);
+      color: whitesmoke;
+      text-decoration: underline;
+      transition: 0.5s all ease-in-out;
+    }
+  }
+}

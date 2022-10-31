@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+.form-group {
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+
+  &.no-margin {
+    margin-bottom: 0;
+  }
+
+  input {
+    width: 100%;
+    height: auto;
+    padding: 1.1rem;
+    display: block;
+    font-family: $text2;
+    font-size: 1rem;
+    color: rgb(60, 60, 60);
+    border: 1px solid grey;
+
+    &:focus {
+      outline: $accent-color 2px solid;
+    }
+  }
+}
+
+.textarea {
+  padding: 1rem;
+  height: 100%;
+  min-height: 10rem;
+  width: 100%;
+  font-family: $text2;
+  font-size: 1rem;
+  color: rgb(60, 60, 60);
+  border: 1px solid grey;
+  resize: vertical;
+
+  &:focus {
+    outline: $accent-color 2px solid;
+  }
+}

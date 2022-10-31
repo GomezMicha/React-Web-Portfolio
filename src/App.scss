@@ -1,0 +1,64 @@
+/*--------- Variables ---------*/
+$text1: "Mulish", sans-serif;
+$text2: "Source Sans Pro", sans-serif;
+$text3: "Quicksand", sans-serif;
+$color_1: rgb(9, 27, 54);
+$color_2: rgb(198, 27, 45);
+$accent-color: rgb(99, 207, 99);
+
+/*--------- Mixins ---------*/
+@mixin button {
+  width: 270px;
+  height: 60px;
+  border: none;
+  background-color: $color_2;
+  cursor: pointer;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid $color_2;
+    box-shadow: 5px 5px 5px rgba(#000, 0.3);
+    text-decoration: none;
+    color: $color_2;
+    transform: translateY(3px);
+    transition: all 0.3s linear;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+@mixin container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin h1_heading {
+  height: 90px;
+  color: $color_2;
+  font-size: 2.3rem;
+  font-family: $text1;
+}
+
+/*--------- App ---------*/
+.App {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  max-height: 1200px;
+  height: 100vh;
+  display: grid;
+  grid-template: 90px 1fr / 200px 1fr;
+  grid-gap: 0;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 767px) {
+    min-height: 100vh;
+  }
+}

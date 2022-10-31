@@ -1,0 +1,115 @@
+@import "../../App.scss";
+
+.contact {
+  grid-area: 2 / 2 / 3 / 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 960px) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  @media screen and (max-width: 767px) {
+    align-items: unset;
+  }
+
+  .contact-container {
+    @include container;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin: 2rem auto;
+    }
+
+    h1 {
+      @include h1_heading;
+
+      @media screen and (max-width: 767px) {
+        height: 70px;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+    .contact-wrapper {
+      width: 100%;
+      min-height: 500px;
+      padding: 0 1rem;
+
+      header {
+        margin: 0 auto 2rem;
+        padding: 1.5rem;
+        font-family: $text2;
+        color: rgb(99, 99, 99);
+
+        strong {
+          color: $accent-color;
+        }
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 1rem;
+          max-width: 600px;
+        }
+
+        h2 {
+          font-size: 2rem;
+          color: $color_1;
+          height: 3rem;
+          font-family: $text3;
+
+          @media screen and (max-width: 767px) {
+            font-size: 1.5rem;
+            height: 2.3rem;
+          }
+        }
+      }
+
+      #form {
+        margin: 0 auto;
+        padding: 1rem 0;
+        max-width: 960px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 767px) {
+          align-items: center;
+          flex-direction: column;
+          max-width: 450px;
+        }
+
+        .send {
+          margin: 2rem auto 0;
+          padding-top: 1rem;
+
+          @media screen and (max-width: 767px) {
+            margin: 0 auto;
+          }
+
+          .send-button {
+            @include button;
+            font-family: $text1;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: whitesmoke;
+          }
+        }
+
+        .form-column {
+          position: relative;
+          flex: 0 0 50%;
+          max-width: 50%;
+          width: 100%;
+          padding: 0 1rem;
+
+          @media screen and (max-width: 767px) {
+            flex: 0 0 100%;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
