@@ -13,9 +13,9 @@ Built with:
 - **[AnimXYZ](https://animxyz.com/).**
 - **[EmailJS](https://emailjs.com/).**
 
-:triangular*flag_on_post: \_To anyone who wishes to make commits and push their own code, just make sure you fork the project first to have a copy of this repository.*
+:triangular_flag_on_post: *To anyone who wishes to make commits and push their own code, just make sure you fork the project first to have a copy of this repository.*
 
-:triangular_flag_on_post: \*If you want to use this project on your own website don't forget to provide proper credit by linking back to my website **[michagomez.me](https://michagomez.me).\***
+:triangular_flag_on_post: *If you want to use this project on your own website don't forget to provide proper credit by linking back to my website **[michagomez.me](https://michagomez.me).***
 
 ## Getting Started
 
