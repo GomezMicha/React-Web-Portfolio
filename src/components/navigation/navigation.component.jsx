@@ -28,7 +28,7 @@ const Navigation = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   // Show or hide navigation menu for mobile devices.
   const navToggler = () => {
