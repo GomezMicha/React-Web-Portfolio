@@ -13,7 +13,6 @@ class PreviewProjectCard extends React.Component {
     this.setState({
       show: !this.state.show,
     });
-    console.log(this.state.show);
   };
 
   render() {
